@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+    kosmo_web:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - '.:/app'
+            - '/app/node_modules'
+        ports:
+            - 8089:3000
+        networks:
+            - dev-network
+        environment:
+            - CHOKIDAR_USEPOLLING=true
+        stdin_open: true
+
+networks:
+    dev-network:
+        driver: bridge
