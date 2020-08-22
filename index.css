@@ -1,0 +1,166 @@
+html{
+  font-size: 15px;
+  margin: 0;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div{
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  margin:0px;
+  padding: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*navbar*/
+#intro, .nav, .ion-arrow-up-b, .ion-arrow-down-b, .navbar-brand, .nav-link{
+    color:white;
+}
+
+.logo{
+  width: 200px;
+  height: 30px;
+  margin:0;
+  padding: 0;
+}
+
+.navbar{
+  background-color: #111111;
+}
+
+/*intro*/
+#intro{
+  background: url(./images/Birds_dark.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contenedor-header{
+  flex-direction: column;
+}
+
+.contenedor-intro{
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.intro-text{
+  font-size: 1.4rem;
+  
+} 
+
+.contactame{
+  background-color: #08A601;
+  margin-top:50px;
+  color:white;
+  transition:2000;
+}
+
+.fa-angle-down{
+  font-size: 3rem;
+  color:white;
+  animation: flecha-animada 2s ease-in-out infinite;
+}
+
+@keyframes flecha-animada{
+  from{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+
+  to{
+    transform: translateY(0);
+  }
+
+}
+
+/*acerca*/
+
+#acerca{
+  background-color: #007D79;
+  color:white;
+  border-bottom: solid #888888 1px;
+  border-top: solid #333333 1px;
+}
+
+.progress-bar{
+  background-color: #08A601;
+}
+
+.litle{
+  font-size: .8rem;
+}
+
+/*servicios*/
+
+.elemento{
+  list-style: none;
+  min-height: 11rem;
+}
+
+.icono-servicio, .icono-f-servicio{
+  padding: 1.5rem;
+  font-size: 2.3rem;
+  border-radius: 100%;
+  color: white;
+  background-color: #08A601;
+  margin: 0 .5rem; 
+}
+
+.icono-f-servicio{
+  border: .5rem antiquewhite solid;
+}
+
+.footer-servicios{
+  min-height: 50vh;
+  background: url(./images/bg-f-servicios.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.capa-superior{
+  background-color: #007D79;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+}
+
+.capa-inferior{
+  position: relative;
+}
+
+.contenedor-logros{
+  min-height: 1vmax;
+}
+
+.logros{
+  color:white;
+}
+
+
+
+/*Proyectos*/
+
+#proyectos{
+  min-height: 50vh;
+}
+
+
