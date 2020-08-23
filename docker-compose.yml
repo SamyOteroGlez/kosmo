@@ -7,8 +7,8 @@ services:
             context: ./
             dockerfile: Dockerfile
         volumes:
-            - '.:/app'
-            - '/app/node_modules'
+            - './:/app'
+            - 'kosmo_web_volume:/app/node_modules'
         ports:
             - 8089:3000
         networks:
@@ -20,3 +20,6 @@ services:
 networks:
     dev-network:
         driver: bridge
+
+volumes:
+    kosmo_web_volume:

@@ -1,0 +1,243 @@
+html{
+  font-size: 15px;
+  margin: 0;
+  color: #111111;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div{
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  margin:0px;
+  padding: 0px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*navbar*/
+#intro, .nav, .ion-arrow-up-b, .ion-arrow-down-b, .navbar-brand, .nav-link{
+    color:white;
+}
+.nav-link:hover{
+  color:#007D79;
+}
+
+div a img{
+  transition: all 2s ease;
+}
+
+div a:hover img{
+  transform: rotateY(360deg);
+  transform-style: preserve-3d;
+}
+
+.logo{
+  width: 200px;
+  height: 30px;
+  margin:0;
+  padding: 0;
+}
+
+.navbar{
+  background-color: #111111;
+}
+
+/*intro*/
+#intro{
+  background: url(./images/Birds_dark.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100vh;
+}
+
+.contenedor-header{
+  flex-direction: column;
+}
+
+.contenedor-intro{
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.intro-text{
+  font-size: 1.4rem;
+  margin-bottom:50px;
+} 
+
+.contactame{
+  background-color: #08A601;
+  color:white;
+  transition: .4s;
+}
+
+.contactame:hover{
+  background-color: #007D79; 
+}
+
+.fa-angle-down{
+  font-size: 3rem;
+  color:white;
+  animation: flecha-animada 2s ease-in-out infinite;
+}
+
+@keyframes flecha-animada{
+  from{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+
+  to{
+    transform: translateY(0);
+  }
+
+}
+
+/*acerca*/
+
+#acerca{
+  background-color: #007D79;
+  color:white;
+  border-bottom: solid #888888 1px;
+  border-top: solid #333333 1px;
+}
+
+.progress-bar{
+  background-color: #08A601;
+}
+
+.litle{
+  font-size: .8rem;
+}
+
+/*servicios*/
+
+.elemento{
+  list-style: none;
+  min-height: 11rem;
+}
+
+.icono-servicio, .icono-f-servicio{
+  padding: 1.5rem;
+  font-size: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  color: white;
+  background-color: #08A601;
+  margin: 0 .5rem; 
+}
+
+.icono-f-servicio{
+  border: .5rem antiquewhite solid;
+  width: 6rem;
+  height: 6rem;
+}
+
+.footer-servicios{
+  min-height: 50vh;
+  background: url(./images/bg-f-servicios.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.capa-superior{
+  background-color: #007D79;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .7;
+}
+
+.capa-inferior{
+  position: relative;
+}
+
+.contenedor-logros{
+  min-height: 1vmax;
+}
+
+.logros{
+  color:white;
+}
+
+/*Proyectos*/
+
+#proyectos{
+  min-height: 50vh;
+}
+
+#proyectos .fa{
+  color: #08A601;
+  font-size: 2.5rem;
+  transition: .4s;
+}
+
+#proyectos .fa:hover{
+  color: #007D79;
+  transition: .4s;
+}
+
+.titulo-trabajo{
+  font-size: 1.2rem;
+}
+
+.titulo-trabajo a:hover{
+  text-decoration: none;
+}
+
+.owl-theme{
+  border: 1px solid #eeeeee;
+}
+
+/*Contactame*/
+
+#contactame{
+  min-height: 100vh;
+  position: relative;
+  background: url(./images/bg-contactame.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Footer*/
+
+#footer{
+  height: 5rem;
+  background-color: #08A601;
+}
+
+.derechos{
+  color: white;
+}
+
+/*Flecha Arriba*/
+
+.flecha-arriba{
+  border-radius: 50%;
+  color: rgb(14, 202, 4);
+  font-size: 2.3rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  display: none;
+}
+
+.flecha-arriba:hover{
+  color: rgb(5, 143, 138);
+}
+
